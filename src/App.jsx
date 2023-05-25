@@ -59,6 +59,7 @@ function App() {
   // As the user types, the value is stored in the password box
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
+    console.log(e.target.value);
   };
 
   // Takes all the input values and adds them to updatedList (Stores the passwords)
@@ -80,6 +81,7 @@ function App() {
     setPassword('');
     setIsItTrue(true);
     setDataToSearch('');
+    
   };
 
   useEffect(() => {
